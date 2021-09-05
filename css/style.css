@@ -1,0 +1,425 @@
+:root {
+  --main-title-font: 40px;
+  --featuers-font: 28px;
+  --light-color: #909091;
+
+  /* #87888C */
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body,
+html {
+  font-size: 14px;
+  font-weight: 500;
+  width: 100%;
+  height: 100%;
+  scroll-snap-type: y mandatory;
+
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.page {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  scroll-snap-align: start;
+}
+svg {
+  width: 120px;
+}
+ul {
+  list-style-type: none;
+}
+li {
+  float: left;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  font-size: inherit;
+}
+.current {
+  background-color: #fff !important;
+  width: 6px !important;
+}
+.hidden {
+  visibility: hidden;
+}
+.logo {
+  padding-left: 2.5rem;
+}
+
+/*
+---------------------
+---------------------
+
+*****First Page*****
+
+---------------------
+---------------------
+
+*/
+/*
+^^^^^^^^^^
+^^Header^^
+^^^^^^^^^^
+*/
+.page-1 {
+  background: url("../img/M3-Hero-LHD-US-D.jpg") no-repeat center center/cover;
+  min-height: 100%;
+  color: #fff;
+}
+#site-header {
+  min-width: 100%;
+  padding: 0.5rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#site-header li a {
+  padding: 1rem 1.5rem;
+  font-size: 1.1rem;
+  border-radius: 25px;
+}
+#site-header li a:hover {
+  background-color: var(--light-color);
+}
+
+/*
+^^^^^^^^^^
+^^Title^^
+^^^^^^^^^^
+*/
+.title {
+  margin-top: 5rem;
+
+  width: 100%;
+  text-align: center;
+}
+.title h1 {
+  font-size: var(--main-title-font);
+  letter-spacing: 5px;
+}
+/*
+^^^^^^^^^^^^^
+^^Side-Menu^^
+^^^^^^^^^^^^^
+*/
+.side-nav {
+  position: absolute;
+  top: 35%;
+  left: 1.2%;
+}
+.side-nav li {
+  float: none;
+  padding: 1rem 0;
+  display: flex;
+}
+.side-nav .select {
+  width: 3px;
+  background-color: var(--light-color);
+  height: 30px;
+  margin-right: 1rem;
+}
+.side-nav li a {
+  width: 100%;
+  visibility: hidden;
+}
+.side-nav li a:hover,
+.side-nav li a:visited {
+  /* visibility: visible !important;
+  transition: visibility 1s 1s ease-in-out; */
+  visibility: visible;
+}
+/*
+^^^^^^^^^^^^^
+^^Features^^
+^^^^^^^^^^^^^
+*/
+.features {
+  width: 80%;
+  margin: auto;
+
+  padding-top: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.feature {
+  margin: 0 2rem;
+}
+.feature h3 {
+  font-size: var(--featuers-font);
+}
+.feature p {
+  font-size: 1.25rem;
+}
+/*Feature 1*/
+
+.feature-1 {
+  text-align: center;
+}
+.feature-1 i {
+  margin-right: 1rem;
+}
+
+/*Feature 4*/
+.feature-4 button {
+  background: transparent;
+  color: #fff;
+  font-size: 1.25rem;
+  border-radius: 25px;
+  border: 2px solid #fff;
+  padding: 0.5rem 2rem;
+}
+.feature-4 button:hover {
+  background: #fff;
+  color: #000;
+  cursor: pointer;
+}
+/*
+^^^^^^^^^^^^^
+^^Features^^
+^^^^^^^^^^^^^
+*/
+footer {
+  width: 100%;
+  padding-top: 50px;
+}
+footer .arrow {
+  width: 50px;
+  margin: auto;
+}
+footer .arrow i {
+  font-size: 2rem;
+}
+footer .arrow i:hover {
+  transform: translateY(-10px);
+  transition: all 0.5s 0.5s ease-in-out;
+}
+/*
+---------------------
+---------------------
+
+*****Second Page*****
+
+---------------------
+---------------------
+
+*/
+
+.page-2 .logo {
+  padding-top: 1rem;
+}
+.page-2 .container {
+  display: flex;
+  width: 100%;
+  height: 95%;
+}
+.page-2 .info {
+  flex: 3;
+  height: 100%;
+  padding-left: 34px;
+  margin-right: 20px;
+}
+.page-2 .img {
+  flex: 6;
+}
+.page-2 .info-heading {
+  padding: 1rem 0;
+}
+.page-2 .info-heading h5 {
+  color: var(--light-color);
+  font-weight: inherit;
+  font-size: 1.75rem;
+}
+.page-2 .info-heading h2 {
+  font-size: 2rem;
+}
+
+.page-2 .info-paragraph {
+  color: var(--light-color);
+  margin-top: 20px;
+  font-size: 1rem;
+}
+
+.page-2 .overall-rating {
+  margin-top: 35px;
+  padding: 20px 50px;
+  background: rgb(233, 215, 215);
+  border-radius: 25px;
+}
+
+.page-2 .overall-rating h3 {
+  font-size: 2rem;
+  text-align: center;
+}
+.page-2 .overall-rating div {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.1rem;
+  padding: 5px;
+}
+.page .learn-more {
+  display: flex;
+  margin-top: 20px;
+  justify-content: space-evenly;
+}
+.page-2 .learn-more p,
+.page-2 .learn-more button {
+  font-size: 1.1rem;
+  padding: 0.75rem;
+
+  color: #333;
+}
+.page-2 .learn-more button:first-child {
+  border-radius: 50%;
+  border: 2px solid black;
+}
+.page-2 .learn-more button:last-child {
+  border-radius: 25px;
+
+  padding: 5px 30px;
+}
+
+.page-2 .learn-more button:hover {
+  cursor: pointer;
+  background: #000;
+  color: #fff;
+}
+
+.page-2 .img {
+  min-height: 100%;
+  background-color: #d5d8e2;
+  background: url("../img/model_3_safety_hero.png") no-repeat center
+    center/cover;
+}
+
+/*
+---------------------
+---------------------
+
+*****Third Page*****
+
+---------------------
+---------------------
+
+*/
+
+.page-3 {
+  display: flex;
+  flex-direction: column;
+}
+
+.up-content {
+  position: relative;
+  width: 100%;
+  flex: 3;
+  color: #fff;
+  background: #000 url("../img/lhd-performance-hero-desktop.jpg") no-repeat
+    center center/cover;
+}
+.up-content .logo {
+  padding-top: 16px;
+}
+.up-content .factors {
+  position: absolute;
+  bottom: 80px;
+  left: 100px;
+  width: 90%;
+  display: flex;
+}
+.up-content .factor {
+  width: 33.3%;
+  padding: 0 30px;
+}
+.up-content .factor h3 {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 400;
+  letter-spacing: 5px;
+}
+.up-content p {
+  width: 70%;
+  font-size: 18px;
+  font-weight: 300;
+  margin: auto;
+}
+
+/****************************
+**************************/
+
+.down-content {
+  width: 100%;
+  flex: 1;
+}
+
+.p-3-container {
+  width: 65%;
+  margin: auto;
+  display: flex;
+  height: 100%;
+}
+.performance-intro,
+.performance-info {
+  padding-top: 20px;
+  padding-left: 30px;
+}
+
+.performance-intro {
+  flex: 2;
+}
+.performance-info {
+  flex: 2;
+  width: 100%;
+}
+
+.performance-intro h5 {
+  color: var(--light-color);
+  font-size: 20px;
+  font-weight: 350;
+}
+.performance-intro h2 {
+  font-size: 32px;
+
+  font-weight: 550;
+  letter-spacing: 1px;
+}
+.performance-intro .p3-buttons {
+  display: flex;
+  width: 75%;
+  margin-top: 25px;
+}
+
+.performance-intro button,
+.performance-intro p {
+  font-size: 1.1rem;
+  padding: 0.75rem;
+
+  color: #333;
+}
+.performance-intro button:first-child {
+  border-radius: 50%;
+  border: 3px solid black;
+}
+.performance-intro button:last-child {
+  border-radius: 25px;
+  border: 3px solid black;
+}
+
+.performance-intro button:hover {
+  cursor: pointer;
+  color: #fff;
+  background: #000;
+}
+.performance-info p {
+  font-size: 16px;
+  width: 90%;
+  color: var(--light-color);
+  line-height: 25px;
+  margin: auto;
+}
